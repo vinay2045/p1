@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List with Drag & Drop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   
+</head>
+<body>
+    <div class="main">
+
+    
+    <h2 class="title">Task Manager</h2>
+    <form id="task-form">
+        <input type="text" id="task-title"  placeholder="Task Title" required>
+        <textarea id="task-about" placeholder="Task About" required></textarea>
+        <input type="date" id="task-start" required>
+        <input type="date" id="task-end" required>
+        <select id="task-priority">
+            
+            <option value="urgent">Urgent</option>
+            <option value="little-urgent">Little Urgent</option>
+            <option value="no-urgent">No Urgent</option>
+        </select>
+        <button type="submit" class="add">Add Task</button>
+    </form>
+    <div class="container">
+        <div class="tasks-container" id="not-completed">
+            <h3>Not Completed</h3>
+            <div class="tasks-group" id="urgent">
+                <h4>Urgent</h4>
+                <div class="tasks">
+                   <div class="tasks-part1">
+                    <h5>Go to Gym </h5>
+                    <p>From : 12-04-2024</p>
+                    <p>---</p>
+                    <p>End : 12-04-2024</p>
+                    <div class="tasks-part1-part1">
+                        <i class='bx bxs-edit-alt' ></i>
+                        <i class='bx bxs-trash-alt'></i>
+                    </div>
+                   </div>
+                   <div class="tasks-part2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime explicabo voluptatem hic repellat reiciendis cumque deleniti quis quo similique quod, quae totam nostrum minima rem. Ex distinctio id adipisci. Placeat!</p>
+                   </div>
+                    
+
+                </div>
+            </div>
+            <div class="tasks-group" id="little-urgent">
+                <h4>Little Urgent</h4>
+            </div>
+            <div class="tasks-group" id="no-urgent">
+                <h4>No Urgent</h4>
+            </div>
+        </div>
+        <div class="tasks-container" id="completed">
+            <h3>Completed</h3>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
