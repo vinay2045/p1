@@ -14,3 +14,20 @@ p {
   font-size: 16px; /* Added for improved readability */
   line-height: 1.5; /* Added for better readability */
 }
+
+<input type="search" id="search" placeholder="Search...">
+<script>
+  const searchInput = document.getElementById('search');
+  const paragraphs = document.querySelectorAll('p');
+
+  searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    paragraphs.forEach(p => {
+      if (p.textContent.toLowerCase().includes(searchTerm)) {
+        p.style.display = 'block';
+      } else {
+        p.style.display = 'none';
+      }
+    });
+  });
+</script>
