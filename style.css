@@ -1,9 +1,21 @@
-The provided CSS does *not* include a rule to set the `body` background color to orange. You need to add a rule similar to this to your `style.css` file:
-
 ```css
 body {
   background-color: orange;
+  font-family: sans-serif; /* Added for a simple style improvement */
+  margin: 20px; /* Added for better readability */
+  color: #333; /* Added for better contrast */
 }
-```
 
-Place this rule at the beginning or end of your `style.css` file, or at a point in the file where it won't be overridden by other more specific rules.  Because this is a very general selector, other styles targeting more specific elements or using `!important` might take precedence.  If that happens, you might need to adjust the selector to be more precise or use `!important` in your `body` rule (though using `!important` is generally discouraged as it can make CSS harder to maintain).
+/* Existing styles would go here...  */
+/* For example: */
+h1 {
+  color: white; /* Added for better contrast with background */
+  text-align: center; /* Added for centering */
+}
+
+p {
+  font-size: 16px; /* Added for improved readability */
+  line-height: 1.5; /* Added for better readability */
+}
+
+```
