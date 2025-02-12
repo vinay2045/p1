@@ -1,51 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List with Drag & Drop</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-   
-</head>
-<body>
-    <div class="main">
+To add an orange background color to the body, you need to add the following CSS rule to your `style.css` file:
 
-    
-    <h2 class="title">Task Manager</h2>
-    <form id="task-form"> 
-        <input type="text" id="task-title"  placeholder="Task Title" required>
-        <textarea id="task-about" placeholder="Task About" ></textarea>
-        <input type="date" id="task-start" >
-        <input type="date" id="task-end" >
-        <select id="task-priority">
-            
-            <option value="urgent">Urgent</option>
-            <option value="little-urgent">Little Urgent</option>
-            <option value="no-urgent">No Urgent</option>
-        </select>
-        <button type="submit" class="add">Add Task</button>
-    </form>
-    <div class="container">
-        <div class="tasks-container" id="not-completed">
-            <h3>Not Completed</h3>
-            <div class="tasks-group" id="urgent">
-                <h4>Urgent</h4>
-               
-            </div>
-            <div class="tasks-group" id="little-urgent">
-                <h4>Little Urgent</h4>
-            </div>
-            <div class="tasks-group" id="no-urgent">
-                <h4>No Urgent</h4>
-            </div>
-        </div>
-        <div class="tasks-container" id="completed">
-            <h3>Completed</h3>
-        </div>
-    </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+```css
+body {
+  background-color: orange;
+}
+```
+
+Make sure that  `style.css` is in the same directory as your HTML file.  If you have other styles affecting the body, you may need to adjust the specificity of this rule (e.g., using more specific selectors) to ensure it overrides them.  For example, if you had `body {background-color: blue;}` already, the orange would not show.  The above code will override any existing `body` styles.
