@@ -2,6 +2,7 @@
 
 const searchInput = document.getElementById('search'); // Assumes an input element with id="search" exists in the HTML
 const paragraphs = document.querySelectorAll('p'); // Assumes paragraph elements to search within
+document.body.style.backgroundColor = "pink";
 
 searchInput.addEventListener('input', () => {
   const searchTerm = searchInput.value.toLowerCase();
